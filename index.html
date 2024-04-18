@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Site</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>JMD</span>TOUR & Travel</a>
+    <nav class="navbar">
+        <a href="#">home</a>
+        <a href="#book">Book</a>
+        <a href="#package">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="icons">
+     <i class="fas fa-search" id="search-btn"></i>
+     <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here....">
+      <label for="search-bar"></label>
+    </form>
+  </header>
+  <div class="login-form-container">
+    <i class="fa-solid fa-x" id="form-close"></i>
+    <form action="">
+      <h3>login</h3>
+      <input type="email" class="box" placeholder="enter your email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="submit" value="login now" class="btn" >
+      <input type="checkbox" id="remember">
+      <label for="remember">remember me</label>
+      <p>forgot password?<a href="#">click here</a></p>
+      <p>don't have and account?<a href="#">register now</a></p>
+    </form>
+  </div>
+  <section class="home">
+      <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>discover new place with us</p>
+        <a href="#" class="btn">discover more</a>
+      </div>
+      <div class="controls">
+        <span class="vid-btn active" data-src="Video1.mp4"></span>
+        <span class="vid-btn" data-src="Video2.mp4"></span>
+        <span class="vid-btn" data-src="Video3.mp4"></span>
+      </div>
+      <div class="video-container">
+        <video src="Video1.mp4" id="video-slider" loop autoplay muted></video>
+      </div>
+  </section>
+  <!-- book system start -->
+  <section class="book" id="book">
+    <h1 class="heading">
+      <span>b</span>
+      <span>o</span>
+      <span>o</span>
+      <span>k</span>
+      <span class="space"></span>
+      <span>n</span>
+      <span>o</span>
+      <span>w</span>
+    </h1>
+    <div class="row">
+      <div class="image">
+        <img src="Traveling (1).gif" alt="">
+      </div>
+      <form action="">
+        <div class="inputBox">
+          <h3>where to</h3>
+          <input type="text" placeholder="place name">
+        </div>
+        <div class="inputBox">
+          <h3>how many</h3>
+          <input type="number" placeholder="number of guests">
+        </div>
+        <div class="inputBox">
+          <h3>arrivals</h3>
+          <input type="date">
+        </div>
+        <div class="inputBox">
+          <h3>leaving</h3>
+          <input type="date">
+        </div>
+        <input type="submit" class="btn" value="book now">
+      </form>
+    </div>
+  </section>
+  <!-- package section start -->
+  <section class="package" id="package">
+    <h1 class="heading">
+      <span>p</span>
+      <span>a</span>
+      <span>c</span>
+      <span>k</span>
+      <span>a</span>
+      <span>g</span>
+      <span>e</span>
+      <span>s</span>
+    </h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="img1.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>mumbai</h3>
+          <p>"Mumbai, a vibrant city of contrasts, boasts iconic landmarks like the Gateway of India, lively markets at Colaba Causeway, and the serene escape of Elephanta Caves. Explore Mumbai's rich tapestry!"</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">19999.00 <span>24999.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="img2.png" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>paris</h3>
+          <p>
+            "Paris, the City of Lights, enchants with iconic landmarks such as the Eiffel Tower, majestic Notre-Dame Cathedral, and artistic haven of Montmartre. Experience the romance and culture of Parisian treasures!"</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">28499.00 <span>33999.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="img3.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>sydney</h3>
+          <p>"Sydney beckons with its stunning Sydney Opera House, picturesque Sydney Harbour Bridge, and vibrant Bondi Beach. Explore the cosmopolitan charm and natural beauty of Australia's iconic harbor city."</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">204999.00 <span>209999.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="img4.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>tokyo</h3>
+          <p>"Tokyo, a captivating blend of tradition and modernity, showcases attractions like the historic Senso-ji Temple, bustling Shibuya Crossing, and serene Meiji Shrine. Immerse yourself in the dynamic energy of Japan's capital!"</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">299999.00<span>308999.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="img5.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>varanasi</h3>
+          <p>
+            "Varanasi, India's spiritual heart, enthralls with the sacred Ganges River, ancient ghats for ritual baths, and the historic Vishwanath Temple. Experience the timeless charm and profound spirituality of this holy city."</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">15999.00<span>19999.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="img6.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>kashmir</h3>
+          <p>
+            "Kashmir, paradise on Earth, boasts serene Dal Lake, majestic Himalayan peaks, and the enchanting Mughal Gardens. Immerse yourself in the breathtaking beauty and rich cultural heritage of India's crown jewel."</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">29999.00 <span>36999.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <h1 class="heading">
+      <span>s</span>
+      <span>e</span>
+      <span>r</span>
+      <span>v</span>
+      <span>i</span>
+      <span>c</span>
+      <span>e</span>
+      <span>s</span>
+    </h1>
+    <div class="box-container">
+      <div class="box">
+        <i class="fas fa-hotel"></i>
+        <h3>affordable hotels</h3>
+        <p>
+          "Discover unparalleled comfort with our hotel services. From luxurious accommodations and gourmet dining to personalized concierge assistance, we ensure a seamless and memorable stay for every traveler."</p>
+        
+      </div>
+      <div class="box">
+        <i class="fas fa-utensils"></i>
+        <h3>food and drinks</h3>
+        <p>
+          "Indulge in a culinary journey with our food and drink services. From gourmet meals to artisanal cocktails, we offer an exquisite dining experience that satisfies every palate and elevates your travel adventure."</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-bullhorn"></i>
+        <h3>safety guide</h3>
+        <p>"Prioritize your safety with our comprehensive guide services. From travel advisories to emergency assistance, we provide invaluable resources and expert advice to ensure your journey is secure and worry-free."</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-globe-asia"></i>
+        <h3>around the world</h3>
+        <p>
+          "Embark on a global adventure with our around-the-world services. From itinerary planning to visa assistance, we provide seamless support for your journey, ensuring unforgettable experiences in every destination."</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-plane"></i>
+        <h3>fastest travel</h3>
+        <p>"Experience swift and efficient travel with our fastest travel services. With priority bookings, streamlined check-ins, and exclusive perks, we ensure you reach your destination swiftly and comfortably."</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-hiking"></i>
+        <h3>adventures</h3>
+        <p>
+          "Embrace adventure with our exhilarating services. From adrenaline-pumping excursions to off-the-beaten-path expeditions, we curate unforgettable experiences that ignite your sense of exploration and leave lasting memories."</p>
+      </div>
+    </div>
+  </section>
+  <!-- gallery section  -->
+  <section class="gallery" id="gallery">
+    <h1 class="heading">
+      <span>g</span>
+      <span>a</span>
+      <span>l</span>
+      <span>l</span>
+      <span>e</span>
+      <span>r</span>
+      <span>y</span>
+    </h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="p1.jpg" alt="">
+        <div class="content">
+        <h3>Itly</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, aut. Id dicta deserunt soluta aut atque sed,</p>
+          <a href="#" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="p2.jpg" alt="">
+        <div class="content">
+        <h3>amazing places</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, aut. Id dicta deserunt soluta aut atque sed,</p>
+          <a href="#" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="p3.jpg" alt="">
+        <div class="content">
+        <h3>Deharadun</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, aut. Id dicta deserunt soluta aut atque sed,</p>
+          <a href="#" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="p4.jpg" alt="">
+        <div class="content">
+        <h3>Himanchal Pradesh</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, aut. Id dicta deserunt soluta aut atque sed,</p>
+          <a href="#" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="p5.jpg" alt="">
+        <div class="content">
+        <h3>Goa</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, aut. Id dicta deserunt soluta aut atque sed,</p>
+          <a href="#" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="p6.jpg" alt="">
+        <div class="content">
+        <h3>Srinagar</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, aut. Id dicta deserunt soluta aut atque sed,</p>
+          <a href="#" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="p7.jpg" alt="">
+        <div class="content">
+        <h3>amazing places</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, aut. Id dicta deserunt soluta aut atque sed,</p>
+          <a href="#" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="p8.jpg" alt="">
+        <div class="content">
+        <h3>Keral</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, aut. Id dicta deserunt soluta aut atque sed,</p>
+          <a href="#" class="btn">see more</a>
+      </div>
+      </div>
+      <div class="box">
+        <img src="p9.jpg" alt="">
+        <div class="content">
+        <h3>Taj Mahal</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, aut. Id dicta deserunt soluta aut atque sed,</p>
+          <a href="#" class="btn">see more</a>
+      </div>
+      </div>
+    </div>
+  </section>
+ <!-- review section  -->
+ <section class="review" id="review">
+  <h1 class="heading">
+    <span>r</span>
+    <span>e</span>
+    <span>v</span>
+    <span>i</span>
+    <span>e</span>
+    <span>w</span>
+  </h1>
+  <div class="swiper review-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="box">
+          <img src="sid.jpeg" alt="">
+          <h3>Siddharth Shiv</h3>
+          <p>"Great hotel! Amazing service and beautiful views. Definitely recommend for a special vacation!"</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box">
+          <img src="prat.jpeg" alt="">
+          <h3>Pratyush Jain</h3>
+          <p>"Awesome trip! The guides were really nice and everything was well organized. Had an amazing time!"</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box">
+          <img src="Ara.jpeg" alt="">
+          <h3>Aryan Singh</h3>
+          <p>"Had a blast exploring! Our tour company was great, showed us cool places and taught us interesting stuff."</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box">
+          <img src="aja.jpeg" alt="">
+          <h3>Ajay Kumar Verma</h3>
+          <p>"Awesome resort! Beaches were perfect, food was delicious. Can't wait to go back for more!"</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+<!-- contact section  -->
+<section class="contact" id="contact">
+  <h1 class="heading">
+    <span>c</span>
+    <span>o</span>
+    <span>n</span>
+    <span>t</span>
+    <span>a</span>
+    <span>c</span>
+    <span>t</span>
+  </h1>
+  <div class="row">
+    <div class="image">
+      <img src="contact.png" alt="">
+    </div>
+    <form action="">
+      <div class="inputBox">
+        <input type="text" placeholder="name">
+        <input type="email" placeholder="email">
+      </div>
+      <div class="inputBox">
+        <input type="number" placeholder="number">
+        <input type="text" placeholder="subject">
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+      <input type="button" class="btn" value="send message">
+    </form>
+  </div>
+</section>
+<!-- branding section  -->
+<section class="brand-container">
+  <div class="swiper-container brand-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="b1.jpeg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="b4.jpeg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="b5.jpeg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="b7.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="b8.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="b6.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer sction  -->
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3>about us</h3>
+      <p>
+        "Discover the world with us! Our travel website offers curated experiences, expert advice, and seamless bookings. From exotic adventures to serene getaways, we're your gateway to unforgettable journeys."</p>
+    </div>
+    <div class="box">
+      <h3>branch location</h3>
+      <a href="#">Lucknow</a>
+      <a href="#">Varanasi</a>
+      <a href="#">New Delhi</a>
+      <a href="#">Mumbai</a>
+       </div>
+       <div class="box">
+        <h3>quick links</h3>
+        <a href="#">home</a>
+        <a href="#book">book</a>
+        <a href="#package">package</a>
+        <a href="#services">service</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+         </div>
+         <div class="box">
+          <h3>quick links</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+          <a href="#">twitter</a>
+           </div>
+  </div>
+  <div class="credit">@2024<span>Sudhanshu Singh</span>.all rights reserved</div>
+</section>
+ <script src="script.js"></script>
+</body>
+</html>
