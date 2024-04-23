@@ -4,6 +4,11 @@
     --orange:#ffa500;
 
 }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
 *{
   font-family: 'Nunito',sans-serif;
     margin: 0;
